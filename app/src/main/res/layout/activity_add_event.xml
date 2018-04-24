@@ -7,25 +7,41 @@
     android:padding="16dp"
     android:orientation="vertical"
     tools:context=".AddEventActivity">
-    <ListView
-        android:id="@+id/job"
+    <TableLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
-    </ListView>
-        <!--<Button-->
-            <!--android:layout_width="match_parent"-->
-            <!--android:layout_height="wrap_content"-->
-            <!--android:text="lala"-->
-            <!--android:layout_alignParentBottom="true"-->
-            <!--android:id="@+id/addjob"/>-->
-        <android.support.design.widget.FloatingActionButton
-            android:id="@+id/addjob"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-            android:layout_alignParentRight="true"
-            android:layout_gravity="end|bottom"
-            android:src="@drawable/plus"
-            android:tint="#ffffff"
-            android:layout_margin="16dp" />
+
+    //tambahin date picker
+    //tambahin spinner shiftnya
+        <TableRow>
+
+        </TableRow>
+        <TableRow>
+            <ListView
+                android:id="@+id/job"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"></ListView>
+        </TableRow>
+        <TableRow>
+            <Button
+                android:id="@+id/ok_button"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentStart="true"
+                android:text="ok" />
+            <Button
+                android:id="@+id/cancel_button"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentStart="true"
+                android:text="cancel" />
+        </TableRow>
+    </TableLayout>
 </RelativeLayout>

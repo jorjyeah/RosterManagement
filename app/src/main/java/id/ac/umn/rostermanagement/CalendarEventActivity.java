@@ -1,6 +1,7 @@
 package id.ac.umn.rostermanagement;
 
 import android.content.Intent;
+import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -14,7 +15,7 @@ public class CalendarEventActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_calendar_event);
 
-        Button eventButton = (Button) findViewById(R.id.addevent);
+        FloatingActionButton eventButton = (FloatingActionButton) findViewById(R.id.addevent);
         eventButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
