@@ -6,18 +6,21 @@ import android.os.Bundle;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
-public class AddEventActivity extends ListActivity {
+public class AddEventActivity extends AppCompatActivity {
 
     // Array of strings...
-    String countryList[] = {"India", "China", "australia", "Portugle", "America", "NewZealand"};
+    String jobList[] = {"Photo 1", "Photo 2", "Photo 3", "Photo CC",
+            "Photo PK", "Photo TX", "Video 1", "Video 2"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add_event);
-        ListView listView = getListView();
-        listView.setChoiceMode(ListView.CHOICE_MODE_MULTIPLE);
-        listView.setTextFilterEnabled(true);
-        setListAdapter(new ArrayAdapter<String>(this,android.R.layout.simple_list_item_checked,countryList));
+
+        ArrayAdapter adapter = new ArrayAdapter<String>(this,
+                R.layout.activity_list_job_view, jobList);
+
+        ListView listView = (ListView) findViewById(R.id.job);
+        listView.setAdapter(adapter);
     }
 }
