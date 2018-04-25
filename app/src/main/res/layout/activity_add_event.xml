@@ -11,18 +11,45 @@
     <TableLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
-
-    //tambahin date picker
-    //tambahin spinner shiftnya
+        <TableRow>
+            <TextView
+                android:text="Name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
+            <EditText
+                android:id="@+id/eventName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
+        </TableRow>
         <TableRow>
             <TextView
                 android:text="Date"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"/>
-            <EditText
-                android:hint="Input Date"
-                android:onClick="onButtonShowPopupWindowClick"
+            <Button
+                android:id="@+id/dateButton"
+                android:text="-"
+                android:onClick="showDatePickerDialog"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:text="Shift"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
+            <Spinner>
+
+            </Spinner>
+            <Button
+                android:id="@+id/hourButton"
+                android:text="-"
+                android:onClick="showTimePickerDialog"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"/>

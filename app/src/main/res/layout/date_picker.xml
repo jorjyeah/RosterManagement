@@ -1,14 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
+<LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="wrap_content"
-    android:layout_height="wrap_content">
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
 
     <DatePicker
+        android:id="@+id/date"
         android:endYear="2030"
         android:startYear="1970"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="#ffffff"></DatePicker>
-
-</RelativeLayout>
+        android:layout_centerHorizontal="true"
+        android:background="#ffffff">
+    </DatePicker>
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right">
+        <TableRow>
+            <Button
+                android:id="@+id/ok_button"
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorAccent"
+                style="?android:attr/borderlessButtonStyle"
+                android:text="ok" />
+            <Button
+                android:id="@+id/cancel_button"
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorAccent"
+                style="?android:attr/borderlessButtonStyle"
+                android:text="cancel" />
+        </TableRow>
+    </TableLayout>
+</LinearLayout>
