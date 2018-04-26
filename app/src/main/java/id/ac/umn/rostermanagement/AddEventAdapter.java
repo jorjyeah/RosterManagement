@@ -21,7 +21,7 @@ public class AddEventAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolde
     @Override
     public RecyclerView.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         LayoutInflater inflater = LayoutInflater.from(context);
-        View row = inflater.inflate(R.layout.costume_row,parent, false);
+        View row = inflater.inflate(R.layout.costume_row_positionlist,parent, false);
         Item item = new Item(row);
         return item;
     }
@@ -40,7 +40,7 @@ public class AddEventAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolde
         TextView textView;
         public Item(View itemView){
             super(itemView);
-            textView = (TextView) itemView.findViewById(R.id.item);
+            textView = (TextView) itemView.findViewById(R.id.itemview);
         }
     }
 }

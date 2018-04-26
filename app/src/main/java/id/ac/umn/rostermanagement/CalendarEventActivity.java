@@ -13,7 +13,7 @@ import android.widget.CalendarView;
 public class CalendarEventActivity extends AppCompatActivity {
 
     RecyclerView recyclerView;
-    String [] Items={"item 0","item 1","item 0","item 1","item 0","item 1","item 0","item 1",};
+    String [] Items={"Sunday Service", "Sunday Service", "Woman Fellowship", "Sisterhood Encounter", "Love to Pray", "Sunday Service", "Sunday Service"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,6 +29,7 @@ public class CalendarEventActivity extends AppCompatActivity {
         });
         recyclerView = (RecyclerView) findViewById(R.id.calendareventrecycler);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
+        recyclerView.addItemDecoration(new VerticalSpace(20));
         recyclerView.setAdapter(new CalendarEventAdapter(this,Items));
     }
 }

@@ -27,7 +27,7 @@ import java.sql.Time;
 public class AddEventActivity extends AppCompatActivity {
 
     // Array of strings...
-    String jobList[] = {"Photo 1", "Photo 2", "Photo 3", "Photo CC",
+    String positionlist[] = {"Photo 1", "Photo 2", "Photo 3", "Photo CC",
             "Photo PK", "Photo TX", "Video 1", "Video 2"};
     String[] selectShift = {"Shift 1", "Shift 2", "Shift 3", "Shift 4"};
     String[] tmphoto = {"-","Yemima", "Albert","Shereen", "George"};
@@ -50,7 +50,8 @@ public class AddEventActivity extends AppCompatActivity {
         //RECYCLER VIEW
         recyclerView = (RecyclerView) findViewById(R.id.jobrecycler);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
-        recyclerView.setAdapter(new AddEventAdapter(this,jobList));
+       // recyclerView.addItemDecoration(new VerticalSpace(20));
+        recyclerView.setAdapter(new AddEventAdapter(this,positionlist));
 
         //SPINNER TM PHOTO
         Spinner sptmphoto = (Spinner) findViewById(R.id.tmphotospinner);

@@ -6,7 +6,7 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Adapter;
+import android.widget.Button;
 import android.widget.TextView;
 
 public class CalendarEventAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
@@ -22,7 +22,7 @@ public class CalendarEventAdapter extends RecyclerView.Adapter<RecyclerView.View
     @Override
     public RecyclerView.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         LayoutInflater inflater = LayoutInflater.from(context);
-        View row = inflater.inflate(R.layout.costume_row,parent, false);
+        View row = inflater.inflate(R.layout.costume_row_eventlist,parent, false);
         Item item = new Item(row);
         return item;
     }
@@ -39,9 +39,10 @@ public class CalendarEventAdapter extends RecyclerView.Adapter<RecyclerView.View
 
     public  class Item extends RecyclerView.ViewHolder{
         TextView textView;
+        Button eventbutton;
         public Item(View itemView){
             super(itemView);
-            textView = (TextView) itemView.findViewById(R.id.item);
+            textView = (TextView) itemView.findViewById(R.id.itemview);
         }
     }
 }

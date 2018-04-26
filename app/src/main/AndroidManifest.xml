@@ -14,11 +14,11 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".MainActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+            <!--<intent-filter>-->
+                <!--<action android:name="android.intent.action.MAIN" />-->
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+                <!--<category android:name="android.intent.category.LAUNCHER" />-->
+            <!--</intent-filter>-->
         </activity>
         <activity
             android:name=".ForgotPasswordActivity"
@@ -35,7 +35,15 @@
             android:name=".AddEventActivity"
             android:label="@string/title_activity_add_event"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".CalendarEventCrewAcrivity"></activity>
+        <activity android:name=".CalendarEventCrewActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".PositionDetailCrewActivity"></activity>
     </application>
 
 </manifest>
