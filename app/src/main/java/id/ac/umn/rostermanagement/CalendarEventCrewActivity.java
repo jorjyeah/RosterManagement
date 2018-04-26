@@ -27,8 +27,9 @@ public class CalendarEventCrewActivity extends AppCompatActivity {
 //            @Override
 //            public void onClick(View v) {
 //                Intent i = new Intent(CalendarEventCrewActivity.this,PositionDetailCrewActivity.class);
+//                startActivity(i);
 //            }
-//        });
+//        }); //make cardview clickable
         recyclerView = (RecyclerView) findViewById(R.id.calendareventcrewrecycler);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         recyclerView.addItemDecoration(new VerticalSpace(20));
