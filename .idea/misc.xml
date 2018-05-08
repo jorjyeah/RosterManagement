@@ -25,7 +25,21 @@
       </value>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+  <component name="ProjectPlainTextFileTypeManager">
+    <file url="file://$PROJECT_DIR$/app/src/main/res/layout/activity_add_event.xml" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/layout/activity_calendar_event.xml" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/layout/activity_calendar_event_crew.xml" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/layout/activity_calendar_event_team_manager.xml" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/layout/activity_cod.xml" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/layout/activity_list_job_view.xml" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/layout/activity_position_detail_crew.xml" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/layout/costume_row_event_crew_list.xml" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/layout/costume_row_eventlist.xml" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/layout/costume_row_position_cod_list.xml" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/layout/costume_row_positionlist.xml" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/layout/date_picker.xml" />
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_7" project-jdk-name="1.8" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">
